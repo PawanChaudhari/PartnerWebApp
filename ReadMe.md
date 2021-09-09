@@ -147,7 +147,7 @@ After a consumer navigates to the authorize endpoint, they will be redirected to
 ![](/img/Oauth_9.png)
 
 
-```
+```C#
 var client = new RestClient("https://signin.mindbodyonline.com/connect/authorize?response_mode=form_post&client_id={yourClientId}&redirect_uri={yourRedirectUri}&scope=email profile openid offline_access Mindbody.Api.Public.v6.Dev&response_type=code id_token&nonce=nonce&subscriberId={subscriberId}");
 client.Timeout = -1;
 var request = new RestRequest(Method.GET);
@@ -207,7 +207,7 @@ Hit the  Get Token api and copy the access token
 
 ![](/img/Oauth_11.png)
 
-```
+```C#
 var client = new RestClient("https://signin.mindbodyonline.com/connect/token");
 client.Timeout = -1;
 var request = new RestRequest(Method.POST);
@@ -232,7 +232,7 @@ Refresh token can be generated as below:
 ![](/img/Oauth_12.png)
 
 
-```
+```C#
 var client = new RestClient("https://signin-sandbox.staging.arcusplatform.io/connect/token");
 client.Timeout = -1;
 var request = new RestRequest(Method.POST);
