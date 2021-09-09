@@ -19,55 +19,55 @@ You can then log in to your developer account from     [https://developers.mindb
 
 Click on **Create an account** link.
 
-![](/img/CreateAccount_1.PNG)
+![](/img/CreateAccount_1.png)
 
 
 Click on **Continue with Email**.
 
-![](/img/ContinuewithEmail.PNG)
+![](/img/ContinuewithEmail.png)
 
 
 Fill the details and click on **Create Account**.
 
-![](/img/CreateAccount_2.PNG)
+![](/img/CreateAccount_2.png)
 
 
 Email will be sent to entered email id for verification.
 
-![](/img/EmailSent.PNG)
+![](/img/EmailSent.png)
 
 
 Click on the  **Verify this email address**.
 
-![](/img/Verification_Mail.PNG)
+![](/img/Verification_Mail.png)
 
 
 Your email will be verified.
 
-![](/img/Email_Verified.PNG)
+![](/img/Email_Verified.png)
 
 
 Sign In again.
 
-![](/img/LogIn.PNG)
+![](/img/LogIn.png)
 
 
-Request for  Go- Liive.
+Request for  Go-Live.
 
-![](/img/GoLive_1.PNG)
+![](/img/GoLive_1.png)
 
-![](/img/GoLive_2.PNG)
+![](/img/GoLive_2.png)
 
-![](/img/GoLive_3.PNG)
+![](/img/GoLive_3.png)
 
 
 Request will go to the admin. Once admin approves the request Login again and create billing acccount.
 
-![](/img/BillingAccount_1.PNG)
+![](/img/BillingAccount_1.png)
 
-![](/img/BillingAccount_2.PNG)
+![](/img/BillingAccount_2.png)
 
-![](/img/BillingAccount_3.PNG)
+![](/img/BillingAccount_3.png)
 
 
 
@@ -85,30 +85,30 @@ For OAuth client creation, please [Contact API Support](https://support.mindbody
 Go to  **Account**.
 
 
-![](/img/Oauth_1.PNG)
+![](/img/Oauth_1.png)
 
-![](/img/Oauth_2.PNG)
+![](/img/Oauth_2.png)
 
 
 Go to **API Credentials** and click on **Create new OAuth Client** and select **Web**.
 
-![](/img/Oauth_3.PNG)
+![](/img/Oauth_3.png)
 
-![](/img/Oauth_4.PNG)
+![](/img/Oauth_4.png)
 
 
 Click on **CREATE CLIENT** and copy the secret.
 
-![](/img/Oauth_5.PNG)
+![](/img/Oauth_5.png)
 
 ![](/img/Oauth_6.PNG)
 
 
 Click on **Manage**. You will be able to see **Configurations** and **Oauth Credentials**.
 
-![](/img/Oauth_7.PNG)
+![](/img/Oauth_7.png)
 
-![](/img/Oauth_8.PNG)
+![](/img/Oauth_8.png)
 
 
 Once Oauth Client is created you can use the endpoint for Authorization.
@@ -144,7 +144,7 @@ After a consumer navigates to the authorize endpoint, they will be redirected to
 
 
 
-![](/img/Oauth_9.PNG)
+![](/img/Oauth_9.png)
 
 
 ```
@@ -158,7 +158,7 @@ Copy the url and paste in Browser.
 
 Copy the Code from network tab in developer tool.
 
-![](/img/Oauth_10.PNG)
+![](/img/Oauth_10.png)
 
 
 **Token**
@@ -205,7 +205,7 @@ This endpoint is used to request an access token in exchange for an authorizatio
 
 Hit the  Get Token api and copy the access token
 
-![](/img/Oauth_11.PNG)
+![](/img/Oauth_11.png)
 
 ```
 var client = new RestClient("https://signin.mindbodyonline.com/connect/token");
@@ -229,7 +229,7 @@ This can be used to access the public api.
 
 Refresh token can be generated as below:
 
-![](/img/Oauth_12.PNG)
+![](/img/Oauth_12.png)
 
 
 ```
