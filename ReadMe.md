@@ -56,7 +56,9 @@ Request for  Go-Live.
 
 ![](/img/GoLive_1.png)
 
+
 ![](/img/GoLive_2.png)
+
 
 ![](/img/GoLive_3.png)
 
@@ -65,7 +67,9 @@ Request will go to the admin. Once admin approves the request Login again and cr
 
 ![](/img/BillingAccount_1.png)
 
+
 ![](/img/BillingAccount_2.png)
+
 
 ![](/img/BillingAccount_3.png)
 
