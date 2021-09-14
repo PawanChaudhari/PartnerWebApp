@@ -4,73 +4,6 @@
 
 You'll need to follow these processes in the order given.
 
-**Creating a Mindbody Developer Account**
-
-Before you can log in to the developer portal, you must create a Mindbody developer account.
-
-**To create a Mindbody developer account**
-
-1.	[Fill out the form for a developer account](https://developers.mindbodyonline.com/Home/SignUp).
-It is important to note that Mindbody takes the business name that you enter on this form and makes it the ```SourceName``` parameter used for Public API calls. This name cannot be changed once you have submitted this form.
-
-2.	Click **Submit**.
-You can then log in to your developer account from     [https://developers.mindbodyonline.com/Home/LogIn](https://developers.mindbodyonline.com/Home/LogIn)
-
-
-Click on **Create an account** link.
-
-![](/img/CreateAccount_1.PNG)
-
-
-Click on **Continue with Email**.
-
-![](/img/ContinuewithEmail.PNG)
-
-
-Fill the details and click on **Create Account**.
-
-![](/img/CreateAccount_2.PNG)
-
-
-Email will be sent to entered email id for verification.
-
-![](/img/EmailSent.PNG)
-
-
-Click on the  **Verify this email address**.
-
-![](/img/Verification_Mail.PNG)
-
-
-Your email will be verified.
-
-![](/img/Email_Verified.PNG)
-
-
-Sign In again.
-
-![](/img/LogIn.PNG)
-
-
-Request for  Go- Liive.
-
-![](/img/GoLive_1.PNG)
-
-![](/img/GoLive_2.PNG)
-
-![](/img/GoLive_3.PNG)
-
-
-Request will go to the admin. Once admin approves the request Login again and create billing acccount.
-
-![](/img/BillingAccount_1.PNG)
-
-![](/img/BillingAccount_2.PNG)
-
-![](/img/BillingAccount_3.PNG)
-
-
-
 ###**OAuth**
 
 OAuth is another way to authorize endpoints by obtaining access token. The OAuth 2.0 authorization is a framework that allows user to grant a third party website or application access to the user's protected resources, without necessarily revealing their credentials or even identity.
@@ -85,30 +18,30 @@ For OAuth client creation, please [Contact API Support](https://support.mindbody
 Go to  **Account**.
 
 
-![](/img/Oauth_1.PNG)
+![](/img/Oauth_1.png)
 
-![](/img/Oauth_2.PNG)
+![](/img/Oauth_2.png)
 
 
 Go to **API Credentials** and click on **Create new OAuth Client** and select **Web**.
 
-![](/img/Oauth_3.PNG)
+![](/img/Oauth_3.png)
 
-![](/img/Oauth_4.PNG)
+![](/img/Oauth_4.png)
 
 
 Click on **CREATE CLIENT** and copy the secret.
 
-![](/img/Oauth_5.PNG)
+![](/img/Oauth_5.png)
 
 ![](/img/Oauth_6.PNG)
 
 
 Click on **Manage**. You will be able to see **Configurations** and **Oauth Credentials**.
 
-![](/img/Oauth_7.PNG)
+![](/img/Oauth_7.png)
 
-![](/img/Oauth_8.PNG)
+![](/img/Oauth_8.png)
 
 
 Once Oauth Client is created you can use the endpoint for Authorization.
@@ -144,10 +77,10 @@ After a consumer navigates to the authorize endpoint, they will be redirected to
 
 
 
-![](/img/Oauth_9.PNG)
+![](/img/Oauth_9.png)
 
 
-```
+```C#
 var client = new RestClient("https://signin.mindbodyonline.com/connect/authorize?response_mode=form_post&client_id={yourClientId}&redirect_uri={yourRedirectUri}&scope=email profile openid offline_access Mindbody.Api.Public.v6.Dev&response_type=code id_token&nonce=nonce&subscriberId={subscriberId}");
 client.Timeout = -1;
 var request = new RestRequest(Method.GET);
@@ -158,7 +91,7 @@ Copy the url and paste in Browser.
 
 Copy the Code from network tab in developer tool.
 
-![](/img/Oauth_10.PNG)
+![](/img/Oauth_10.png)
 
 
 **Token**
@@ -205,9 +138,9 @@ This endpoint is used to request an access token in exchange for an authorizatio
 
 Hit the  Get Token api and copy the access token
 
-![](/img/Oauth_11.PNG)
+![](/img/Oauth_11.png)
 
-```
+```C#
 var client = new RestClient("https://signin.mindbodyonline.com/connect/token");
 client.Timeout = -1;
 var request = new RestRequest(Method.POST);
@@ -229,10 +162,10 @@ This can be used to access the public api.
 
 Refresh token can be generated as below:
 
-![](/img/Oauth_12.PNG)
+![](/img/Oauth_12.png)
 
 
-```
+```C#
 var client = new RestClient("https://signin-sandbox.staging.arcusplatform.io/connect/token");
 client.Timeout = -1;
 var request = new RestRequest(Method.POST);
