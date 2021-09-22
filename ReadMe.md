@@ -95,7 +95,7 @@ Copy the Code from network tab in developer tool.
 
 
 
-![](/img/Oauth_15.png)
+![](/img/Oauth_15.PNG)
 
 
 **Token**
