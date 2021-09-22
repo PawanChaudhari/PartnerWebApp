@@ -94,6 +94,10 @@ Copy the Code from network tab in developer tool.
 ![](/img/Oauth_10.png)
 
 
+
+![](/img/OAuth_Flow.png)
+
+
 **Token**
 
 [https://signin.mindbodyonline.com/connect/token](https://signin.mindbodyonline.com/connect/token)
@@ -166,7 +170,7 @@ Refresh token can be generated as below:
 
 
 ```C#
-var client = new RestClient("https://signin-sandbox.staging.arcusplatform.io/connect/token");
+var client = new RestClient("https://signin.mindbodyonline.com/connect/token");
 client.Timeout = -1;
 var request = new RestRequest(Method.POST);
 request.AddHeader("accept", "application/json");
